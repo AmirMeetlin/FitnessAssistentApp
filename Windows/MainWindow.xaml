@@ -1,0 +1,115 @@
+﻿<Window x:Class="MetlinFitnessAssistent.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MetlinFitnessAssistent"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Border Background="#FF1B357C" />
+        <StackPanel
+            HorizontalAlignment="Center"
+            >
+            <TextBlock
+            Text="Фитнесс помощник"
+            Foreground="White"
+            FontSize="20"
+            Margin=" 0 10 0 0" 
+            TextAlignment="Center" FontWeight="Bold"
+            />
+            <TextBlock
+             Text="Данная утилита отлично справляется не только с подсчетом калорий, но и подборкой персональной диеты, учетом физических нагрузок, подробным анализом продуктов и не только"
+             Foreground="White"
+             TextWrapping="Wrap"
+             Width="500" 
+             TextAlignment="Center"
+             Margin=" 0 15 0 0" 
+             FontFamily="Segoe UI Light" 
+             FontSize="14"
+             />
+        </StackPanel>
+        <StackPanel
+            Grid.Row="1"
+            HorizontalAlignment="Center"
+            >
+            <TextBlock
+             Text="АВТОРИЗУЙТЕСЬ:"
+             Foreground="#FF1B357C"
+             Margin=" 0 30 0 0" 
+             FontFamily="Segoe UI Emoji"
+             TextAlignment="Center"
+             FontSize="15"
+             />
+            <WrapPanel
+                Margin=" 0 30 65 0"
+                >
+                <TextBlock
+                 Text="ЛОГИН"
+                 Foreground="#FF1B357C"
+                 FontFamily="Segoe UI Emoji"
+                 VerticalAlignment="Center"
+                 Margin="0 0 20 0"
+                 FontSize="15"
+                 />
+                <TextBox
+                    BorderThickness="1.2"
+                    Width="150"
+                    Height="30"
+                    BorderBrush="#FF1B357C"
+                    Margin="0 0 0 0 "
+                    x:Name="tbLogin"
+                    />
+            </WrapPanel>
+            <WrapPanel
+                Margin=" 0 30 65 0"
+                >
+                <TextBlock
+                 Text="ПАРОЛЬ"
+                 Foreground="#FF1B357C"
+                 FontFamily="Segoe UI Emoji"
+                 VerticalAlignment="Center"
+                 Margin="0 0 10 0"
+                 FontSize="15"
+                 />
+                <PasswordBox
+                    BorderThickness="1.2"
+                    Width="150"
+                    Height="30"
+                    BorderBrush="#FF1B357C"
+                    Margin="0 0 0 0 "
+                    x:Name="tbPass"
+                    />
+            </WrapPanel>
+            <Button
+                Width="150"
+                Height="35"
+                Margin=" 0 60 0 0"
+                Background="#FF1B357C"
+                Content="ВОЙТИ" 
+                Foreground="White"               
+                />
+            <TextBlock
+             Text="Нет аккаунта?"
+             Foreground="#FF1B357C"
+             Margin=" 0 60 0 0" 
+             FontFamily="Segoe UI Emoji"
+             TextAlignment="Center"
+             FontSize="13"            
+             />
+            <TextBlock
+             Foreground="#FF1B357C"
+             Margin=" 0 10 0 0" 
+             FontFamily="Segoe UI Emoji"
+             TextAlignment="Center"
+             FontSize="13"
+             >
+                <Hyperlink Click="Hyperlink_Click">Зарегестрироваться</Hyperlink>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

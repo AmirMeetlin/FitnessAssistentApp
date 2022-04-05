@@ -1,0 +1,258 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MetlinFitnessAssistent.Windows"
+        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2" x:Class="MetlinFitnessAssistent.Windows.RegistrationWindow"
+        mc:Ignorable="d"
+        Title="RegistrationWindow" Height="550" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Border 
+            Background="#FF1B357C" 
+            Grid.ColumnSpan="4"
+            />
+        <StackPanel
+            HorizontalAlignment="Center"
+            Grid.ColumnSpan="4" Margin="225,0"
+            >
+            <TextBlock
+            Text="Фитнесс помощник"
+            Foreground="White"
+            FontSize="20"
+            Margin=" 0 10 0 0" 
+            TextAlignment="Center"
+            FontWeight="Bold"         
+            />
+            <TextBlock
+            Text="Регисрация"
+            Foreground="White"
+            FontSize="18"
+            Margin=" 0 10 0 0" 
+            TextAlignment="Center"
+            FontWeight="Bold"
+            Grid.ColumnSpan="2"
+            />
+            <TextBlock
+            Text="Заполните поля, обязательные для ввода"
+            Foreground="White"
+            FontSize="18"
+            Margin=" 0 10 0 0" 
+            TextAlignment="Center"
+            Grid.ColumnSpan="2"
+            />
+        </StackPanel>
+        <TextBlock
+            HorizontalAlignment="Right"
+            Grid.Row="1"
+            Text="Логин"
+            Foreground="#FF1B357C"
+            FontFamily="Segoe UI Emoji"
+            VerticalAlignment="Center"
+            Margin="0 20 0 0"
+            FontSize="15"
+        />
+        <TextBox
+            Grid.Row="1"
+            Grid.Column="1"
+            BorderThickness="1.2"
+            Width="150"
+            Height="30"
+            BorderBrush="#FF1B357C"
+            Margin="0 20 0 0 "
+            x:Name="tbLogin"
+        />
+        <TextBlock
+            HorizontalAlignment="Right"
+            Grid.Row="2"
+            Text="Пароль"
+            Foreground="#FF1B357C"
+            FontFamily="Segoe UI Emoji"
+            VerticalAlignment="Center"
+            Margin="0 0 0 0"
+            FontSize="15"
+        />
+        <TextBox
+            Grid.Row="2"
+            Grid.Column="1"
+            BorderThickness="1.2"
+            Width="150"
+            Height="30"
+            BorderBrush="#FF1B357C"
+            Margin="0 0 0 0 "
+            x:Name="tbPassword"
+            MaxLength="20"
+        />
+        <TextBlock
+            HorizontalAlignment="Left"
+            Grid.Row="2"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="3"
+            Foreground="#FF1B357C"
+            FontFamily="Segoe UI Emoji"
+            VerticalAlignment="Center"
+            Margin="0 0 0 0"
+            FontSize="15"
+        ><Run Text="Пароль должен соответсвовать следующим "/><LineBreak/><Run Text="условиям:"/><LineBreak/><Run Text="• количество символов от 8 до 20"/><LineBreak/><Run Text="• наличие цифр"/><LineBreak/><Run Text="• наличие спецсимволов"/><LineBreak/><Run Text="• наличие прописных и строчных букв"/></TextBlock>
+        <TextBlock
+            HorizontalAlignment="Right"
+            Grid.Row="3"
+            Text="Фамилия"
+            Foreground="#FF1B357C"
+            FontFamily="Segoe UI Emoji"
+            VerticalAlignment="Center"
+            Margin="0 0 0 0"
+            FontSize="15"
+        />
+        <TextBox
+            Grid.Row="3"
+            Grid.Column="1"
+            BorderThickness="1.2"
+            Width="150"
+            Height="30"
+            BorderBrush="#FF1B357C"
+            Margin="0 0 0 0 "
+            x:Name="tbFirstName"
+        />
+        <TextBlock
+            HorizontalAlignment="Right"
+            Grid.Row="4"
+            Text="Имя"
+            Foreground="#FF1B357C"
+            FontFamily="Segoe UI Emoji"
+            VerticalAlignment="Center"
+            Margin="0 0 0 0"
+            FontSize="15"
+        />
+        <TextBox
+            Grid.Row="4"
+            Grid.Column="1"
+            BorderThickness="1.2"
+            Width="150"
+            Height="30"
+            BorderBrush="#FF1B357C"
+            Margin="0 0 0 0 "
+            x:Name="tbSecondName"
+        />
+        <TextBlock
+            HorizontalAlignment="Right"
+            Grid.Row="5"
+            Text="Рост (см.)"
+            Foreground="#FF1B357C"
+            FontFamily="Segoe UI Emoji"
+            VerticalAlignment="Center"
+            Margin="0 0 0 0"
+            FontSize="15"
+        />
+        <TextBox
+            Grid.Row="5"
+            Grid.Column="1"
+            BorderThickness="1.2"
+            Width="150"
+            Height="30"
+            BorderBrush="#FF1B357C"
+            Margin="0 0 0 0 "
+            x:Name="tbHeght"
+        />
+        <TextBlock
+            HorizontalAlignment="Right"
+            Grid.Row="6"
+            Text="Вес (кг.)"
+            Foreground="#FF1B357C"
+            FontFamily="Segoe UI Emoji"
+            VerticalAlignment="Center"
+            Margin="0 0 0 0"
+            FontSize="15"
+        />
+        <TextBox
+            Grid.Row="6"
+            Grid.Column="1"
+            BorderThickness="1.2"
+            Width="150"
+            Height="30"
+            BorderBrush="#FF1B357C"
+            Margin="0 0 0 0 "
+            x:Name="tbWeight"
+        />
+        <TextBlock
+            HorizontalAlignment="Right"
+            Grid.Row="7"
+            Text="Дата рождения"
+            Foreground="#FF1B357C"
+            FontFamily="Segoe UI Emoji"
+            VerticalAlignment="Center"
+            Margin="0 0 0 0"
+            FontSize="15"
+        />
+        <TextBox
+            Grid.Row="7"
+            Grid.Column="1"
+            BorderThickness="1.2"
+            Width="150"
+            Height="30"
+            BorderBrush="#FF1B357C"
+            Margin="0 0 0 0 "
+            x:Name="tbBirth"
+        />
+        <ComboBox
+            Grid.Row="7"
+            Grid.Column="2"
+            BorderThickness="1.2"
+            Width="150"
+            Height="30"
+            BorderBrush="#FF1B357C"
+            Margin="0 0 0 0 "
+            x:Name="cbGender"
+        Style="{DynamicResource ComboBoxStyle1}"
+        />
+        <TextBlock
+            HorizontalAlignment="Left"
+            Grid.Row="7"
+            Grid.Column="3"
+            Text="Пол"
+            Foreground="#FF1B357C"
+            FontFamily="Segoe UI Emoji"
+            VerticalAlignment="Center"
+            Margin="0 0 0 0"
+            FontSize="15"
+        />
+        <Button
+            Grid.Column="1"
+            Grid.Row="8"
+            Width="160"
+            Height="35"
+            Margin=" 0 0 15 0"
+            Background="#FF1B357C"
+            Content="ЗАРЕГЕСТРИРОВАТЬСЯ" 
+            Foreground="White"               
+            />
+        <Button
+            Grid.Column="2"
+            Grid.Row="8"
+            Width="150"
+            Height="35"
+            Margin=" 0 0 0 0"
+            Background="White"
+            Content="ОТМЕНА" 
+            Foreground="#FF1B357C" BorderBrush="#FF1B357C"               
+            />
+    </Grid>
+</Window>

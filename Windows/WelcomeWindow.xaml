@@ -1,0 +1,239 @@
+﻿<Window x:Class="MetlinFitnessAssistent.Windows.WelcomeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MetlinFitnessAssistent.Windows"
+        mc:Ignorable="d"
+        Title="WelcomeWindow" Height="700" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2.5*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+        <Border 
+            Background="#FF1B357C" 
+            Grid.ColumnSpan="3"
+            />
+        <StackPanel
+            HorizontalAlignment="Center" Grid.Column="1"
+            >
+            <TextBlock
+            Text="Фитнесс помощник"
+            Foreground="White"
+            FontSize="20"
+            Margin=" 0 15 0 0" 
+            TextAlignment="Center"
+            FontWeight="Bold"         
+            />
+        </StackPanel>
+        <StackPanel
+            HorizontalAlignment="Center"
+            Grid.Column="1" 
+            Grid.Row="1"          
+            >
+            <TextBlock
+            Text="Добро пожаловать, Мария!"
+            Foreground="#FF1B357C"
+            FontSize="20"
+            Margin=" 0 20 0 0" 
+            TextAlignment="Center"
+            FontWeight="Bold"
+            
+            />
+            <Border
+                Width="350"
+                Margin="0,20,0,0" 
+                Background="#FF1B357C"
+                Height="1"
+               
+                />
+        </StackPanel>
+        <StackPanel
+            HorizontalAlignment="Left"
+            Grid.Column="1" 
+            Grid.Row="2"          
+            >
+            <TextBlock
+            Text="Ваши текущие показатели:"
+            Foreground="#FF1B357C"
+            FontSize="18"
+            Margin=" 10 20 0 0" 
+            TextAlignment="Center"
+             HorizontalAlignment="Left"       
+            />
+            <WrapPanel>
+                <TextBlock
+            Text="Вес (кг.): "
+            Foreground="#FF1B357C"
+            FontSize="18"
+            Margin="10 10 0 0" 
+            TextAlignment="Center"
+             HorizontalAlignment="Left"       
+            />
+                <TextBlock
+            Text="54"
+            Foreground="#FF1B357C"
+            FontSize="18"
+            Margin=" 10 10 0 0" 
+            TextAlignment="Center"
+             HorizontalAlignment="Left" FontWeight="Bold"       
+            />
+
+                <TextBlock
+            Text="Рост (см.): "
+            Foreground="#FF1B357C"
+            FontSize="18"
+            Margin=" 50 10 0 0" 
+            TextAlignment="Center"
+             HorizontalAlignment="Left"       
+            />
+                <TextBlock
+            Text="173"
+            Foreground="#FF1B357C"
+            FontSize="18"
+            Margin=" 10 10 0 0" 
+            TextAlignment="Center"
+             HorizontalAlignment="Left" FontWeight="Bold"       
+            />
+                <TextBlock
+            Text="Возраст: "
+            Foreground="#FF1B357C"
+            FontSize="18"
+            Margin=" 50 10 0 0" 
+            TextAlignment="Center"
+             HorizontalAlignment="Left"       
+            />
+                <TextBlock
+            Text="29"
+            Foreground="#FF1B357C"
+            FontSize="18"
+            Margin=" 10 10 0 0" 
+            TextAlignment="Center"
+             HorizontalAlignment="Left" FontWeight="Bold"       
+            />
+            </WrapPanel>
+            <Border
+                Width="680"
+                HorizontalAlignment="Center"
+                Margin="0,30,0,0" 
+                Background="#FF1B357C"
+                Height="1"              
+                />
+        </StackPanel>
+
+        <StackPanel
+            HorizontalAlignment="Left"
+            Grid.Column="1" 
+            Grid.Row="3"          
+            >
+            <WrapPanel>
+                <TextBlock
+                Text="Индекс массы тела составляет:"
+                TextAlignment="Left"
+                Foreground="#FF1B357C"
+                FontSize="18"
+                Margin=" 10 10 0 0" 
+                HorizontalAlignment="Left"       
+                TextWrapping="Wrap" Width="133"
+                />
+                <TextBlock
+                Text="18.04 км/м2 Недостаточная (дефицит) масса тела"
+                Foreground="#FF1B357C"
+                FontSize="18"
+                Margin=" 30 35 0 0" 
+                TextAlignment="Center"
+                HorizontalAlignment="Left"
+                FontWeight="Bold"       
+                />
+            </WrapPanel>
+            <TextBlock
+             Text="Величина, позволяющая оценить степень соответствия массы человека и его роста и тем самым косвенно судить о том, является ли масса недостаточной, нормальной, или избыточной. Важен при определении показаний для необходимости лечения"
+             Foreground="#FF1B357C"
+             TextWrapping="Wrap"
+             Width="597" 
+             Margin=" 10 15 0 0" 
+             FontFamily="Segoe UI Light" 
+             FontSize="14" 
+             FontStyle="Italic"
+             HorizontalAlignment="Left"
+             />
+            <Border
+                Width="680"
+                HorizontalAlignment="Center"
+                Margin="0,15,0,0" 
+                Background="#FF1B357C"
+                Height="1"              
+                />
+        </StackPanel>
+        <StackPanel
+            HorizontalAlignment="Left"
+            Grid.Column="1" 
+            Grid.Row="4"          
+            >
+            <WrapPanel>
+                <TextBlock
+                Text="Уровень базального метаболизма:"
+                TextAlignment="Left"
+                Foreground="#FF1B357C"
+                FontSize="18"
+                Margin=" 10 10 0 0" 
+                HorizontalAlignment="Left"       
+                TextWrapping="Wrap" Width="133"
+                />
+                <TextBlock
+                Text="1 335 ккал/день"
+                Foreground="#FF1B357C"
+                FontSize="18"
+                Margin=" 30 60 0 0" 
+                TextAlignment="Center"
+                HorizontalAlignment="Left"
+                FontWeight="Bold"       
+                />
+                <TextBlock
+             Text="Это приблизительное количество калорий, которое бы вы сожгли, если бы целые сутки провели, ничего не делая. Это минимальное количество энергии, необходимое для поддержания жизнидеятельности организма, включая такие его функции, как дыхание и сердцебиение."
+             Foreground="#FF1B357C"
+             TextWrapping="Wrap"
+             Width="597" 
+             Margin=" 10 15 0 0" 
+             FontFamily="Segoe UI Light" 
+             FontSize="14" 
+             FontStyle="Italic"
+             HorizontalAlignment="Left"
+             />
+            </WrapPanel>
+        </StackPanel>
+        <WrapPanel
+            Grid.Row="5"
+            Grid.Column="1"
+            HorizontalAlignment="Center"
+            Margin=" 0 30 0 0 "
+            >
+            <Button
+            Width="160"
+            Height="35"
+            Margin=" 0 0 15 0"
+            Background="#FF1B357C"
+            Content="ИЗМЕНИТЬ ПОКАЗАТЕЛИ" 
+            Foreground="White"               
+            />
+            <Button
+            Width="150"
+            Height="35"
+            Margin=" 0 0 0 0"
+            Background="White"
+            Content="ВЫЙТИ" 
+            Foreground="#FF1B357C" BorderBrush="#FF1B357C"               
+            />
+        </WrapPanel>
+    </Grid>
+</Window>
